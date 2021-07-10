@@ -51,9 +51,9 @@ https://github.com/aibolit666/SpaceGame
 
 **Experience**
 JavaScript / Front-end pre-school course from The Rolling Scopes community
-*(in the process)*
+*(in the process)* 2021.07
 
-JavaScript / Front-end course from The Rolling Scopes community
+JavaScript / Front-end course from The Rolling Scopes community 2021.02
 
 Stepik - Python Programming. Stepik - Python: Basics and Applications.
 
