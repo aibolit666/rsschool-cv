@@ -53,6 +53,8 @@ p {
 }
 
 li {
+  display: flex;
+  align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   color: rgb(190, 240, 240);
