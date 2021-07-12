@@ -127,6 +127,14 @@ footer {
   padding: 5px 5px;
 }
 
+.git-img {
+  width: 40px;
+}
+
+.git-img-footer {
+  width: 100%;
+}
+
 .git:hover {
   transition: all 0.5s ease-out;
   cursor: pointer;

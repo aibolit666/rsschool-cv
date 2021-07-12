@@ -57,11 +57,11 @@
 
   function fizzbuzz(n) {
     let arr = []
-    for (let x = 1; x &lt= n+1; x++) {
+    for (let x = 1; x &lt;= n+1; x++) {
       arr.push(x)
     }
     let arr_1 = []
-    for (let i = 1; i &lt arr.length; i++) {
+    for (let i = 1; i &lt; arr.length; i++) {
       if (i % 15 == 0) {
         arr_1.push('FizzBuzz');     
       }
@@ -82,13 +82,13 @@
         >
         <ul>
           <li>
-            <img src="./GitHub-Mark.png" alt="Github link" width="40px" />
+            <img class="git-img" src="./GitHub-Mark.png" alt="Github link" />
             <a href="https://github.com/aibolit666/mortal-kombat"
               >github.com/aibolit666/mortal-kombat</a
             >
           </li>
           <li>
-            <img src="./GitHub-Mark.png" alt="Github link" width="40px" />
+            <img class="git-img" src="./GitHub-Mark.png" alt="Github link" />
             <a href="https://github.com/aibolit666/SpaceGame"
               >github.com/aibolit666/SpaceGame</a
             >
@@ -124,7 +124,7 @@
     </main>
     <footer>
       <p class="git">
-        <img src="./GitHub-Mark.png" alt="Github link" width="40px" /><a
+        <img class="git-img" src="./GitHub-Mark.png" alt="Github link" /><a
           href="https://github.com/aibolit666"
         >
           github.com/aibolit666</a
@@ -132,7 +132,10 @@
       </p>
       <div class="rs-logo">
         <a href="https://rs.school/js/">
-          <img src="./rs_school_js.svg" alt="Логотип RS SCHOOL" width="100"
+          <img
+            class="git-img-footer"
+            src="./rs_school_js.svg"
+            alt="Логотип RS SCHOOL"
         /></a>
       </div>
       <p>2021</p>
