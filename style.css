@@ -96,7 +96,7 @@ img:active {
 }
 
 section {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 pre {
@@ -114,25 +114,8 @@ pre {
   box-shadow: 0 0 55px;
 }
 
-footer {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.git {
-  display: flex;
-  align-items: center;
-  margin-right: 150px;
-  padding: 5px 5px;
-}
-
 .git-img {
   width: 40px;
-}
-
-.git-img-footer {
-  width: 100%;
 }
 
 .git:hover {
@@ -141,6 +124,30 @@ footer {
   box-shadow: 0 0 55px coral;
 }
 
+footer {
+  max-width: 740px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.git-logo {
+  width: 100px;
+  margin-right: 60px;
+}
+
+.youtube-logo {
+  width: 150px;
+  margin-right: 50px;
+}
+
 .rs-logo {
-  max-width: 300px;
+  width: 300px;
+}
+
+.year-logo {
+  width: 50px;
 }
