@@ -141,7 +141,8 @@ ul {
   padding: 0;
 }
 
-li {
+li,
+.next {
   display: flex;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -154,27 +155,28 @@ li {
 
 li:hover {
   transform: rotate(2deg);
+  filter: brightness(140%);
 }
 
-img {
-  max-width: 40%;
+.image {
+  max-width: 30%;
   border-radius: 2%;
   box-shadow: 0 0 25px;
   filter: contrast(90%);
 }
 
-img:hover {
+.image:hover {
   transform: rotate(5deg);
   transition: all 0.5s ease-out;
   cursor: pointer;
   box-shadow: 0 0 55px coral;
 }
-img:not(hover) {
+.image:not(hover) {
   transform: rotate(-0deg);
   transition: all 0.5s ease-out;
 }
 
-img:active {
+.image:active {
   transform: rotate(-365deg);
   transition: all 0.5s ease-out;
 }
@@ -218,27 +220,54 @@ footer {
   margin-bottom: 30px;
 }
 
-.git-logo {
+.git-logo img {
   width: 100px;
   margin-right: 60px;
 }
 
-.youtube-logo {
+.youtube-logo img {
   width: 150px;
   margin-right: 50px;
 }
 
-.rs-logo {
+.rs-logo img {
   width: 300px;
 }
 
-.year-logo {
+.year-logo img {
   width: 50px;
 }
 
+#viewport {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 0;
+}
+
 @media (max-width: 768px) {
-  img {
-    max-width: 60%;
+  .image {
+    max-width: 50%;
   }
 }
 
@@ -250,7 +279,7 @@ footer {
   main {
     max-width: 400px;
   }
-  img {
+  .image {
     max-width: 55%;
   }
   h1,
@@ -288,14 +317,14 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .rs-logo {
+  .rs-logo img {
     min-width: 130%;
   }
-  .git-logo {
+  .git-logo img {
     margin-left: 16%;
     min-width: 120%;
   }
-  .youtube-logo {
+  .youtube-logo img {
     margin-left: 13%;
     min-width: 120%;
   }
@@ -316,7 +345,7 @@ footer {
     margin-left: 10px;
     max-width: 300px;
   }
-  img {
+  .image {
     max-width: 80%;
   }
 
@@ -350,13 +379,13 @@ footer {
     max-width: 320px;
     align-items: center;
   }
-  .rs-logo {
+  .rs-logo img {
     min-width: 30%;
   }
-  .git-logo {
+  .git-logo img {
     min-width: 100%;
   }
-  .youtube-logo {
+  .youtube-logo img {
     min-width: 100%;
   }
   .year-logo {
