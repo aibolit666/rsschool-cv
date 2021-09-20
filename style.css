@@ -89,6 +89,9 @@ main {
 .burger span.active {
   background: rgba(255, 255, 255, 0);
 }
+.burger:hover {
+  filter: brightness(110%);
+}
 
 .menu {
   margin-top: 80px;
