@@ -153,6 +153,12 @@ li,
   margin-bottom: 15px;
 }
 
+.next {
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+}
+
 li:hover {
   transform: rotate(2deg);
   filter: brightness(140%);
@@ -263,6 +269,10 @@ footer {
   height: 100%;
   object-fit: contain;
   object-position: 0;
+}
+
+.slide:hover {
+  filter: brightness(125%);
 }
 
 @media (max-width: 768px) {
@@ -380,13 +390,13 @@ footer {
     align-items: center;
   }
   .rs-logo img {
-    min-width: 30%;
+    min-width: 50%;
   }
   .git-logo img {
-    min-width: 100%;
+    min-width: 30%;
   }
   .youtube-logo img {
-    min-width: 100%;
+    min-width: 30%;
   }
   .year-logo {
     margin-left: 40%;
