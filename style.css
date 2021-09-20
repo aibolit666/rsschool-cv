@@ -40,7 +40,7 @@ main {
 }
 
 .burger {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 10px;
   width: 50px;
@@ -91,6 +91,7 @@ main {
 }
 
 .menu {
+  margin-top: 80px;
   width: 250px;
   height: auto;
   background: -webkit-gradient(
@@ -98,18 +99,18 @@ main {
     left top,
     left bottom,
     from(#a34386),
-    to(#331979)
+    to(#402980)
   );
   background: -moz-linear-gradient(top, #a34386, #331979);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a34386', endColorstr='#331979');
-  border-radius: 0 0 5% 0;
+  border-radius: 5% 0 0% 5%;
   padding: 10px;
   position: fixed;
-  left: -320px;
-  transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  right: -320px;
+  transition: right 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .menu.animate {
-  left: 0;
+  right: 0;
   transition: all 1s ease-out;
   box-shadow: 0 0 55px coral;
 }
@@ -191,7 +192,7 @@ pre {
     from(#a34386),
     to(#331979)
   );
-  background: -moz-linear-gradient(top, #a34386, #331979);
+  background: -moz-linear-gradient(top, #a34386, #402980);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a34386', endColorstr='#331979');
   color: rgb(145, 192, 192);
   box-shadow: 0 0 55px;
