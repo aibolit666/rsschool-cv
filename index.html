@@ -5,16 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RS SCHOOL CV - Priladyshev Pavel Alexandrovich</title>
+    <link rel="favicon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <h1>Pavel Priladyshev</h1>
-      <img src="./ava.jpg" alt="CV image" />
+      <img class="image" src="./ava.jpg" alt="CV image" />
+      <div class="burger">
+        <span></span>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="#contacts">CONTACTS</a></li>
+            <li><a href="#mission">MISSION</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#code">CODE EXAMPLES</a></li>
+            <li><a href="#viewport">PROJECTS</a></li>
+            <li><a href="#exp">EXPIRIENCE</a></li>
+            <li><a href="#edu">EDUCATION</a></li>
+            <li><a href="#eng">ENGLISH</a></li>
+            <li><a href="#">^ GO UP ^</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section>
-        <h2>CONTACTS</h2>
+        <h2 id="contacts">CONTACTS</h2>
         <ul>
           <li>
             <h3>E-MAIL</h3>
@@ -22,28 +41,32 @@
           </li>
           <li>
             <h3>TWITTER</h3>
-            <a href="https://twitter.com/aibolit666">@aibolit666</a>
+            <a target="_blank" href="https://twitter.com/aibolit666"
+              >@aibolit666</a
+            >
           </li>
           <li>
             <h3>DISCORD</h3>
-            <a href="https://discord.com/channels/@Aibolit666">@Aibolit666</a>
+            <a target="_blank" href="https://discord.com/channels/@Aibolit666"
+              >@Aibolit666</a
+            >
           </li>
         </ul>
       </section>
       <section>
-        <h3>Mission</h3>
-        <p>
+        <h3 id="mission">Mission</h3>
+        <article>
           I study JavaScript to become a fullstack web developer. My mission -
           help people translate their ideas into a working product. My strengths
           lie in the constant learning of new and improving my previous
           knowledge.
-        </p>
+        </article>
       </section>
       <section>
-        <h3>Skills</h3>
+        <h3 id="skills">Skills</h3>
         <h6>HARD</h6>
         <ul>
-          <li>JavaScript, HTML, CSS, Python, GIT, Figma</li>
+          <li>JavaScript, HTML, CSS, GIT, Figma</li>
         </ul>
         <h6>SOFT</h6>
         <ul>
@@ -51,8 +74,8 @@
         </ul>
       </section>
       <section>
-        <h3>Code examples</h3>
-        <pre>
+        <h3 id="code">Code examples</h3>
+        <pre><code>
   JavaScript
 
   function fizzbuzz(n) {
@@ -77,65 +100,101 @@
     return arr_1
   }
 
-  fizzbuzz(10)
-            </pre
-        >
-        <ul>
-          <li>
-            <img class="git-img" src="./GitHub-Mark.png" alt="Github link" />
-            <a href="https://github.com/aibolit666/mortal-kombat"
-              >github.com/aibolit666/mortal-kombat</a
-            >
-          </li>
-          <li>
-            <img class="git-img" src="./GitHub-Mark.png" alt="Github link" />
-            <a href="https://github.com/aibolit666/SpaceGame"
-              >github.com/aibolit666/SpaceGame</a
-            >
-          </li>
-        </ul>
+  fizzbuzz(10)</code>
+            </pre>
       </section>
       <section>
-        <h3>Experience</h3>
+        <h3>PROJECTS</h3>
+        <div id="viewport">
+          <div class="slider">
+            <div class="slide">
+              <a
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/aibolit666-JSFEPRESCHOOL/museum"
+                ><img src="./projects/louvre.png" alt="museum" />
+              </a>
+            </div>
+            <div class="slide">
+              <a
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/aibolit666-JSFEPRESCHOOL/drum-kit"
+                ><img src="./projects/drum-kit.png" alt="drum-kit"
+              /></a>
+            </div>
+            <div class="slide">
+              <a
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/aibolit666-JSFEPRESCHOOL/photofilter"
+                ><img src="./projects/photo-filter.png" alt="photo-filter"
+              /></a>
+            </div>
+            <div class="slide">
+              <a
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/aibolit666-JSFEPRESCHOOL/js-clock"
+                ><img src="./projects/clock-js.png" alt="clock-js"
+              /></a>
+            </div>
+            <div class="slide">
+              <a
+                target="_blank"
+                href="https://rolling-scopes-school.github.io/aibolit666-JSFE2021Q1/online-zoo/index.html"
+                ><img src="./projects/online-zoo.jpg" alt="online-zoo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <button class="next" id="next">NEXT</button>
+      </section>
+      <section>
+        <h3 id="exp">Experience</h3>
+        <p>
+          <b>
+            JavaScript / Front-end course from The Rolling Scopes community
+            2021.09</b
+          >
+        </p>
         <p>
           JavaScript / Front-end pre-school course from The Rolling Scopes
-          community *(in the process)* 2021.07
+          community 2021.07
         </p>
         <p>
           JavaScript / Front-end course from The Rolling Scopes community
           2021.02
         </p>
+        <p>Codecademy - Learn JavaScript.</p>
         <p>Stepik - Python Programming.</p>
         <p>Stepik - Python: Basics and Applications.</p>
         <p>JetBrains Academy - Python for Beginners.</p>
-        <p>Codecademy - Learn JavaScript.</p>
       </section>
       <section>
-        <h3>Education</h3>
+        <h4 id="edu">Education</h4>
         <p>
           Saint-Petersburg University of Culture and Arts '13, Management of
           organizations.
         </p>
       </section>
       <section>
-        <h3>English</h3>
+        <h5 id="eng">English</h5>
         <p>A2+, independent study.</p>
       </section>
     </main>
     <footer>
       <div class="git-logo">
-        <img src="./GitHub-Mark.png" alt="Github link" /><a
-          href="https://github.com/aibolit666"
-        >
+        <a target="_blank" href="https://github.com/aibolit666"
+          ><img src="./GitHub-Mark.png" alt="Github link" />
         </a>
       </div>
       <div class="youtube-logo">
-        <a href="https://youtu.be/bXAS9c1PItU">
+        <a
+          target="_blank"
+          href="https://youtube.com/channel/UCgmYAgkrG3u5rwK95CF2Jjg"
+        >
           <img src="./youtube.webp" alt="YouTube link"
         /></a>
       </div>
       <div class="rs-logo">
-        <a href="https://rs.school/js/">
+        <a target="_blank" href="https://rs.school/js/">
           <img src="./rs_school_js.svg" alt="RS SCHOOL link"
         /></a>
       </div>
@@ -143,5 +202,6 @@
         <p>2021</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
