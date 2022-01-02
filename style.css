@@ -339,18 +339,13 @@ footer {
     align-items: center;
   }
   .rs-logo img {
-    min-width: 130%;
+    min-width: 100%;
   }
   .git-logo img {
-    margin-left: 16%;
-    min-width: 120%;
+    min-width: 100%;
   }
   .youtube-logo img {
-    margin-left: 13%;
-    min-width: 120%;
-  }
-  .year-logo {
-    margin-right: 50%;
+    min-width: 100%;
   }
   pre {
     font-size: 5px;
