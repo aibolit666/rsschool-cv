@@ -138,7 +138,7 @@ article {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   color: rgb(240, 240, 240);
-  line-height: 1.5em;
+  line-height: 1.8em;
 }
 
 ul {
@@ -155,7 +155,7 @@ li,
   background-color: rgba(0, 0, 0, 0.4);
   list-style: none;
   margin-bottom: 15px;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .next {
