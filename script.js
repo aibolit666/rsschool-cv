@@ -3,9 +3,10 @@ document.querySelector(".burger").addEventListener("click", function () {
   document.querySelector(".menu").classList.toggle("animate");
 });
 
-let viewport = document.getElementById("viewport").offsetWidth;
-let btnNext = document.getElementById("next");
-let slides = document.querySelectorAll(".slide");
+const viewport = document.getElementById("viewport").offsetWidth;
+const btnNext = document.getElementById("next");
+const slides = document.querySelectorAll(".slide");
+const toTopBtn = document.getElementById("to-top");
 let sliders = [];
 
 for (let i = 0; i < slides.length; i++) {
@@ -48,3 +49,18 @@ function left() {
   }, 500);
 }
 btnNext.addEventListener("click", left);
+
+
+toTopBtn.onclick = function () {
+  document.documentElement.scrollTop = 0;
+};
+
+window.onscroll = function () {
+if (
+  document.documentElement.scrollTop > toTopBtn.getBoundingClientRect().top
+) {
+  toTopBtn.style.visibility = "visible";
+ } else {
+   toTopBtn.style.visibility = "hidden";
+ }
+};

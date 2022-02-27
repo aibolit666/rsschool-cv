@@ -41,7 +41,7 @@ main {
 
 .burger {
   position: fixed;
-  right: 10px;
+  right: 50px;
   top: 10px;
   width: 50px;
   height: 50px;
@@ -110,12 +110,12 @@ main {
   padding: 10px;
   position: fixed;
   right: -320px;
-  transition: right 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: right 1s cubic-bezier(0.68, 0, 0.265, 1.55);
 }
 .menu.animate {
   right: 0;
   transition: all 1s ease-out;
-  box-shadow: 0 0 55px coral;
+  box-shadow: 0 0 55px white;
 }
 
 h1,
@@ -159,16 +159,24 @@ li,
 }
 
 .next {
+  position: absolute;
+  top: 45%;
+  right: 0%;
   justify-content: center;
-  width: 150px;
+  width: 50px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: none;
+  border-style: none;
   font-size: 22px;
+  font-weight: bold;
   cursor: pointer;
+  z-index: 1;
+  transition: 1s;
 }
 
 .next:hover {
-  background-color: blueviolet;
+  background-color: #43a360;
+  filter: brightness(110%);
 }
 
 li:hover {
@@ -181,20 +189,47 @@ li:not(hover) {
   transition: all 0.3s ease-out;
 }
 
+.up-btn {
+  cursor: pointer;
+  position: fixed;
+  content: "";
+  width: 80px;
+  height: 80px;
+  display: flex;
+  border-radius: 50%;
+  background: none;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  right: 40px;
+  opacity: 0.4;
+  bottom: 40px;
+  padding-bottom: 8px;
+  font-size: 50px;
+  box-shadow: 0 0 55px black;
+}
+
+.up-btn:hover {
+  color: black;
+  box-shadow: 0 0 30px white;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
 .image {
-  max-width: 70%;
+  max-width: 60%;
   border-radius: 50%;
   box-shadow: 0 0 25px;
   filter: contrast(90%);
+  margin-bottom: 10px;
 }
 
 .image:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   transition: all 0.5s ease-out;
-  box-shadow: 0 0 200px rgb(255, 255, 255);
+  box-shadow: 0 0 50px rgb(255, 255, 255);
 }
 .image:not(hover) {
-  transform: rotate(-0deg);
   transition: all 0.5s ease-out;
 }
 
@@ -300,8 +335,12 @@ footer {
   main {
     max-width: 400px;
   }
+  .burger {
+    right: 10px;
+  }
   .image {
-    max-width: 55%;
+    max-width: 50%;
+    margin-bottom: 10px;
   }
   h1,
   h2,
@@ -350,6 +389,10 @@ footer {
   pre {
     font-size: 5px;
   }
+
+  .up-btn {
+    right: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -357,12 +400,19 @@ footer {
     margin: 0 auto;
     max-width: 320px;
   }
+  header {
+    margin-top: 40px;
+  }
+  .burger {
+    right: 15px;
+  }
   main {
     margin-left: 10px;
     max-width: 300px;
   }
   .image {
-    max-width: 80%;
+    max-width: 70%;
+    margin-bottom: 20px;
   }
 
   h1 {
